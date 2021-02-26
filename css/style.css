@@ -16,6 +16,7 @@ html,
   max-width: 1920px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
   text-align: center;
 }
 
@@ -207,6 +208,32 @@ p {
   height: 75px;
 }
 
+/* ============================== COUNTER ===== */
+#counter {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+#counter .counter-container {
+}
+
+#counter .counter-container .counter-box {
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#counter .counter-container .counter-box .broj {
+  font-size: 5rem;
+}
+
+#counter .counter-container .counter-box img {
+  width: 75px;
+  height: 75px;
+}
+
 /* ============================== CONTACT ===== */
 #contact {
   padding: 3rem 0;
@@ -263,6 +290,5 @@ p {
 }
 
 #footer .footer-container p {
-  padding: 1rem;
-  margin-bottom: 5rem;
+  padding-bottom: 4rem;
 }
