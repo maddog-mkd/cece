@@ -71,6 +71,7 @@ p {
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: bolder;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
 }
 
 .btn-dark {
@@ -145,8 +146,10 @@ p {
 }
 
 .content-container .navigation li a img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* ============================== SHOWCASE ===== */
@@ -201,6 +204,7 @@ p {
   margin: 1rem;
   background-color: var(--primary-color);
   color: var(--white-color);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
 }
 
 /* ============================== WHY US ===== */
@@ -213,6 +217,7 @@ p {
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .why-us-container .why-us-boxes img {
@@ -235,6 +240,7 @@ p {
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 #counter .counter-container .counter-box .broj {
@@ -280,6 +286,7 @@ p {
   padding: 1rem;
   border-radius: 1rem;
   border: none;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 #contact .contact-container form textarea {
@@ -287,6 +294,7 @@ p {
   border: none;
   margin: 1rem 0;
   padding: 1rem;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 #contact .contact-container form button {
