@@ -105,14 +105,22 @@ p {
 
 .content-container .navigation {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
-  padding: 0.5rem;
+  padding: 0.8rem;
+  margin: 0;
+}
+
+.content-container .navigation li:last-child {
+  border: none;
 }
 
 .content-container .navigation li {
   text-transform: uppercase;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 2rem;
 }
 
 .content-container .navigation li:hover {
