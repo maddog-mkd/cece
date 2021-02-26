@@ -1,0 +1,260 @@
+:root {
+  --primary-color: #3b5998;
+  --primary-t-color: rgba(59, 88, 152, 0.6);
+  --secondary-color: #8b9dc3;
+  --greyish-color: #dfe3ee;
+  --whitesmoke-color: #f7f7f7;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+.lead-h {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  padding: 0 0.5rem;
+}
+
+.lead-p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 0 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.btn-dark {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-light {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.btn-dark:hover,
+.btn-light:hover {
+  opacity: 0.8;
+}
+
+/* ============================== NAVIGATION ===== */
+#navbar .content-container {
+  max-width: 1920px;
+  margin: auto;
+  background-color: var(--primary-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+#navbar .content-container .logo {
+  display: none;
+}
+
+.content-container .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.content-container .navigation li {
+  text-transform: uppercase;
+}
+
+.content-container .navigation li:hover {
+  opacity: 0.7;
+}
+
+.content-container .navigation li a span {
+  display: none;
+}
+
+.content-container .navigation li a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ============================== SHOWCASE ===== */
+#showcase {
+  position: relative;
+  background-color: var(--primary-t-color);
+  height: 100vh;
+  color: var(--white-color);
+}
+
+#showcase .showcase-container {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/img/show\ \(2\).png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ============================== ABOUT ===== */
+#about {
+  padding: 3rem 0;
+}
+
+/* ============================== SERVICES ===== */
+#services {
+  padding: 3rem 0;
+  background-color: var(--whitesmoke-color);
+}
+
+#services .services-container div div ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+#services .services-container div div ul li {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* ============================== WHY US ===== */
+#why-us {
+  padding: 3rem 0;
+}
+
+.why-us-container .why-us-boxes {
+  background-color: var(--greyish-color);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.why-us-container .why-us-boxes img {
+  width: 75px;
+  height: 75px;
+}
+
+/* ============================== CONTACT ===== */
+#contact {
+  padding: 3rem 0;
+  background-color: var(--greyish-color);
+}
+
+#contact .contact-container ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 1rem;
+}
+
+#contact .contact-container ul li {
+  padding: 0.5rem 0;
+}
+
+#contact .contact-container ul li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+}
+
+#contact .contact-container form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+#contact .contact-container form input {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+#contact .contact-container form textarea {
+  border-radius: 1rem;
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+#contact .contact-container form button {
+  width: 200px;
+  margin: auto;
+  border: none;
+}
+
+/* ============================== FOOTER ===== */
+#footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+#footer .footer-container p {
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
